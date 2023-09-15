@@ -4,7 +4,7 @@
 let angle = 0; // Initialise a variable 'angle', and set it to zero
 
 function setup() {
-  createCanvas(400, 400); // Create a canvas with a size of 400x400 pixels.
+  createCanvas(600, 600); // Create a canvas with a size of 400x400 pixels.
   noFill(); // Don't fill shapes with color by default.
   stroke(0); // Set the stroke color to black (0).
 }
