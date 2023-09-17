@@ -49,6 +49,18 @@ nav {
     text-align: center;
     margin-top: 30px;
 }
+/* when mouse hover over the list, change colour to red */
+ul li a:hover {
+    color: #e74c3c;
+}
+/* ease in and out the color transition */
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: color 0.3s ease-in-out;
+}
 
 blockquote, q {
 	quotes: none;
