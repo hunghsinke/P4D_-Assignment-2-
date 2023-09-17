@@ -129,13 +129,38 @@ canvas{
 	background-color: aqua;
 }
 
+/* create button to go back and to go to the next page */
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+  }
+  
+  a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .previous {
+	background-color: #f1f1f1;
+	color: black;
+  }
+  
+  .next {
+	background-color: #0486aa;
+	color: white;
+  }
+  
+  .round {
+	border-radius: 50%;
+  }
+
 /* 
     If you want to style the 500x500 canvas you sketch is in, add
     CSS to the main tag, below.  You might want to add a border, 
     change alignment or add padding for example.
 */
 main {
-	min-height: 100vh; /* Ensure the content fills the viewport height */
     display: flex;
 	justify-content: center;
 	align-content: center;
