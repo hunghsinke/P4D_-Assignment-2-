@@ -1,6 +1,8 @@
 # Assignment Notes 
 This is your first assignment (after the Logo quiz).  The files in this github repository ("repo") are the ones you'll want to use as a template for your assignment.
 
+I have designed extra features on top of the weekly exercises. This includes responsive designs for mobile and tablets. As well as the previous and next buttons to help with navigation. 
+
 ## Using the files
 To use these, simply clone this repository onto your computer, or go to the GitHub website, click the green `Code` button and download the zip file.
 
