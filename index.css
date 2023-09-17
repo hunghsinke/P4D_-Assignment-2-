@@ -50,6 +50,15 @@ section {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
+
+/* add header style, set colour to blue and text to white */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
 ol, ul {
 	list-style: none;
 }
