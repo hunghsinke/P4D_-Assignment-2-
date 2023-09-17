@@ -38,10 +38,18 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 2;
+	margin: 2%;
+	background-color: #f5f5f5;
 }
 ol, ul {
 	list-style: none;
 }
+/* allign header text to the centre and set margin-top  */
+nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
 blockquote, q {
 	quotes: none;
 }
