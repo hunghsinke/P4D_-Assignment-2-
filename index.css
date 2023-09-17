@@ -11,6 +11,8 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
+/* Reset styles */
+/* Apply a reset to remove default browser styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -36,27 +38,36 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* Set the base font and background color */
+/* Define the base font, background color, and line height for the entire page */
 body {
 	line-height: 2;
 	margin: 2%;
 	background-color: #f5f5f5;
 }
+/* Section styles */
+/* Style content sections */
 /* set section margin and width, padding, add box-shadow and radius of the border */
 section {
-    margin: 20px auto;
+    margin: 4% auto; /* Adjust margin for smaller screens */
     max-width: 800px;
-    padding: 20px;
+    padding: 4% 2%; /* Adjust padding for smaller screens */
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
-
+/* Header styles */
+/* Style the page header */
 /* add header style, set colour to blue and text to white */
 header {
     background-color: #3498db;
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 4% 0;/* Adjust padding for smaller screens */
+}
+/* Dynamic header font size */
+header h1 {
+    font-size: 3rem; /* Larger font size for the header */
 }
 
 ol, ul {
@@ -65,7 +76,7 @@ ol, ul {
 /* allign header text to the centre and set margin-top  */
 nav {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 3%; /* Adjust margin for smaller screens */
 }
 /* when mouse hover over the list, change colour to red */
 ul li a:hover {
@@ -76,19 +87,27 @@ header a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+	font-weight: bold;
     margin: 0 20px;
     transition: color 0.3s ease-in-out;
 }
 /* set h1 font size and margins*/
 h1 {
-    font-size: 42px;
+    font-size: 2.5 rem; /* Adjust font size for smaller screens */
     margin-bottom: 20px;
 }
 /* set h2 font size and margins*/
 h2 {
-    font-size: 30px;
+	font-size: 1.8rem; /* Adjust font size for smaller screens */
     margin-top: 20px;
     margin-bottom: 10px;
+}
+/* Paragraph styles */
+/* Style paragraphs */
+p {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    line-height: 1.6;
+    color: #333;
 }
 
 blockquote, q {
@@ -116,10 +135,39 @@ canvas{
     change alignment or add padding for example.
 */
 main {
-	height: 100vh;
-	display: grid;
+	min-height: 100vh; /* Ensure the content fills the viewport height */
+    display: flex;
 	justify-content: center;
 	align-content: center;
 	background-color:#e08e1f;
+
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    section {
+        margin: 4% auto;
+        padding: 4% 2%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 
 }
